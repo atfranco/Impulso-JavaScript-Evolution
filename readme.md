@@ -12,10 +12,8 @@
 - Material UI (estilo)
 - Redux (centralização de estados)
 
-# Para rodar o projeto utilize os seguintes comandos nas devidas pastas:
+# Para rodar o projeto utilize os seguintes comandos nas devidas pastas (backend/frontend):
 
-/backend
-yarn run dev
+/backend: yarn run dev
 
-/frontend
-yarn start
+/frontend: yarn start
