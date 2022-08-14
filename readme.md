@@ -1,4 +1,4 @@
-# Projeto de Ecommerce com backend e frontend em Javascript
+# Projeto de Ecommerce com backend e frontend em Javascript {Node + React}
 
 # Backend composto por:
 

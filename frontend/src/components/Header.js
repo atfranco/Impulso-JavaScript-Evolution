@@ -6,19 +6,17 @@ import "./style.css"
 
 const Header = () => {
     return(
-        <div class="headstyle">
         <Grid container direction="row" justify="space-between" alignItems="center" xs={12}>
-            <div class="">
+            <div class="headstyle">
             <Link to="/"><Typography variant='h4'>BOOTCAMP SHOP</Typography></Link>
+                <div class="flex">
+                <div class="pr-1">
+                <Link to="/contato"><Button variant="outlined" color="primary">Contato</Button></Link>
+                </div>
+                <Cart />
+                </div>
             </div>
-            <div class="flex">
-            <div class="pr-1">
-            <Link to="/contato"><Button variant="outlined" color="primary">Contato</Button></Link>
-            </div>
-            <Cart />
-            </div>   
-        </Grid>  
-        </div>      
+        </Grid>      
     )
 }
 

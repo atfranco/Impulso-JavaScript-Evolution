@@ -4,3 +4,7 @@
 .show{
     display: inline-table;
 }
+.modal {
+    margin-top: 120px;
+    height: auto;
+}

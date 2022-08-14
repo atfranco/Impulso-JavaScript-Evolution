@@ -71,7 +71,7 @@ const Cart = () => {
                         </tbody>
                         </table>
                         </div>
-                    <div className="modal-footer"><button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Fechar</button></div>
+                    <div className="modal-footer"><button type="button" className="btn btn-primary" data-bs-dismiss="modal">Concluir Compra</button></div>
                     </div>
                 </div>
             </div>

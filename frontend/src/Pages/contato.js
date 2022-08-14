@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Grid, Button, TextField } from '@material-ui/core/';
+import "./style.css";
 
 const Contatos = () => {
 
@@ -53,27 +54,30 @@ const Contatos = () => {
 
     return(
         <>
-            <Grid container direction="row" xs={12}>
-                <TextField id="name" label="Name" value={author} onChange={(event)=>{setAuthor(event.target.value)}} fullWidth/>
-                <TextField id="message" label="Message" value={content} onChange={(event)=>{setContent(event.target.value)}} fullWidth/>
-            </Grid>
+            <div class="pad10">
+                <Grid container direction="row" xs={12}>
+                    <TextField id="name" label="Nome" value={author} onChange={(event)=>{setAuthor(event.target.value)}} fullWidth/>
+                    <TextField id="message" label="Mensagem" value={content} onChange={(event)=>{setContent(event.target.value)}} fullWidth/>
+                </Grid>
 
-            {validator && 
-                <div className="alert alert-warning alert-dismissible fade show mt-2" role="alert">
-                    <strong>Por favor preencha todos os campos!</strong>
-                    <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>
-            }
 
-            {success && 
-                <div className="alert alert-success alert-dismissible fade show mt-2" role="alert">
-                    <strong>Mensagem foi enviada</strong>
-                </div>
-            }
+                {validator && 
+                    <div className="alert alert-warning alert-dismissible fade show mt-2" role="alert">
+                        <strong>Por favor preencha todos os campos!</strong>
+                        <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                }
 
-            <Button onClick={sendMessage} className="mt-2" variant="contained" color="primary">
-                Enviar
-            </Button>
+                {success && 
+                    <div className="alert alert-success alert-dismissible fade show mt-2" role="alert">
+                        <strong>Mensagem foi enviada</strong>
+                    </div>
+                }
+
+                <Button onClick={sendMessage} className="mt-2" variant="contained" color="primary">
+                    Enviar
+                </Button>
+            </div>
 
             {message.map((content) => {
                 return(
