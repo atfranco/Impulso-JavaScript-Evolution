@@ -19,5 +19,5 @@ app.use(router)
 
 // config porta
 app.listen(5000, () => {
-    console.log('Servidor na porta 5000 https://localhost:5000')
+    console.log('Servidor rodando na porta 5000 https://localhost:5000')
 })

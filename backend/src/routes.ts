@@ -8,7 +8,7 @@ const createMessageController = new CreateMessageController();
 const listMessageController = new ListMessageController();
 
 router.get('/', (request: Request, response: Response) => {
-    return response.json({message: 'Bem vindo a API Dio Shopping'})
+    return response.json({message: 'Rota GET funcionando'})
 })
 
 router.get('/message', listMessageController.hanle)

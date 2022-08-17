@@ -11,9 +11,9 @@ const Header = () => {
             <Link to="/"><Typography variant='h4'>BOOTCAMP SHOP</Typography></Link>
                 <div class="flex">
                 <div class="pr-1">
-                <Link to="/contato"><Button variant="outlined" color="primary">Contato</Button></Link>
-                </div>
                 <Cart />
+                </div>
+                <Link to="/contato"><Button variant="contained" color="primary">Contato</Button></Link>
                 </div>
             </div>
         </Grid>      

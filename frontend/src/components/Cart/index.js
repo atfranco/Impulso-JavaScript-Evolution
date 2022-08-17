@@ -13,7 +13,7 @@ const Cart = () => {
         totalPrice += (cart.Cart[i].price * cart.Cart[i].quantity)
     }
     if(cart.value > 0){
-        localStorage.setItem('dioshopping: cart', JSON.stringify(cart))
+        localStorage.setItem('ecommercejson: carrinho', JSON.stringify(cart))
     }
     return(
         <>
@@ -29,7 +29,7 @@ const Cart = () => {
                 <div className="modal-dialog">
                     <div className="modal-content">
                     <div className="modal-header">
-                    <h5 className="modal-title" id="CartModalLabel">Meu Carrinho</h5>
+                    <h5 className="modal-title" id="CartModalLabel">Carrinho</h5>
                         <button type="button" className="close" data-bs-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                         </button>
@@ -71,7 +71,7 @@ const Cart = () => {
                         </tbody>
                         </table>
                         </div>
-                    <div className="modal-footer"><button type="button" className="btn btn-primary" data-bs-dismiss="modal">Concluir Compra</button></div>
+                    <div className="modal-footer"><button type="button" className="btn btn-primary" data-bs-dismiss="modal">Checkout</button></div>
                     </div>
                 </div>
             </div>
