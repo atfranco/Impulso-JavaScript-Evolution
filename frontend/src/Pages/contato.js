@@ -70,7 +70,7 @@ const Contatos = () => {
 
                 {success && 
                     <div className="alert alert-success alert-dismissible fade show mt-2" role="alert">
-                        <strong>Mensagem foi enviada</strong>
+                        <strong>Sua mensagem foi enviada com sucesso.</strong>
                     </div>
                 }
 
